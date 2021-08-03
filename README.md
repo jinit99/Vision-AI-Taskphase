@@ -1,1 +1,4 @@
-Task-1 Update:The three tasks were completing the crash course on python and a project included in it and making 2 mini games completed all of them and implemented the learnings in the mini projects
+Task-1 Update:The three tasks were to complete the crash course on python and a project included in it and making 2 mini games completed all of them and implemented the learnings in the mini projects
+IMAGES:
+snake game: ![Screenshot (121)](https://user-images.githubusercontent.com/87493467/128055033-ce5ed7de-8f6c-4338-87c2-4af94cf30d13.png)
+tictactoe game: ![Screenshot (122)](https://user-images.githubusercontent.com/87493467/128054812-8c9315dc-d764-489f-b559-994e9c2c003e.png)
