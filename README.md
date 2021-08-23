@@ -2,3 +2,4 @@ Task-1 Update:The three tasks were to complete the crash course on python and a 
 IMAGES:
 snake game: ![Screenshot (121)](https://user-images.githubusercontent.com/87493467/128055033-ce5ed7de-8f6c-4338-87c2-4af94cf30d13.png)
 tictactoe game: ![Screenshot (122)](https://user-images.githubusercontent.com/87493467/128054812-8c9315dc-d764-489f-b559-994e9c2c003e.png)
+completed the task 2 and learnt various libraries and their implementation like numpy pandas sklearn and matplotlib
