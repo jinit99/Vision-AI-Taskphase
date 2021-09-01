@@ -1,2 +1,1 @@
-in this task i learnt the libraries like numpy matplotlib pandas and also sk learn and also their implementation through various codes
-also in this phase i learnt how to plot graphs and do data prediction and other basic stuff
+In this whole task the libraries i learnt were numpy, pandas and also matplotlib and sklearn whose implementation is in the Task-2 folder. Also i learned the opencv code implementation and the codes for that are under the task-2 folder all the images, videos and xml files are uploaded and updated. 
