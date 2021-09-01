@@ -12,21 +12,20 @@ while(True):
     upper_red = np.array([255, 255, 180])
 
     mask = cv2.inRange(hsv, lower_red, upper_red)
-    res = cv2.bitwise_and(frame, frame, mask=mask)
-    kernel = np.ones((15, 15), np.float32)/225
-    smoothed = cv2.filter2D(res, -1, kernel)
-    blur = cv2.GaussianBlur(res, (15, 15), 0)
-    median = cv2.medianBlur(res, 15)
-    bilateral = cv2.bilateralFilter(res, 15, 75, 75)
-    cv2.imshow('bilateral Blur', bilateral)
+    result = cv2.bitwise_and(frame, frame, mask=mask)
+    kernel = np.ones((15, 15), np.float32)/225# to get 15 by 15 pixels
+    smoothed = cv2.filter2D(result, -1, kernel)
+    blur = cv2.GaussianBlur(result, (15, 15), 0)
+    median = cv2.medianBlur(result, 15)
+    bilateral = cv2.bilateralFilter(result, 15, 75, 75)
+    cv2.imshow('Bilateral Blur', bilateral)
     cv2.imshow('Median Blur', median)
 
     cv2.imshow('Gaussian Blurring', blur)
     cv2.imshow('Original', frame)
     cv2.imshow('Averaging', smoothed)
 
-    k = cv2.waitKey(5) & 0xFF
-    if k == 27:
+    if cv2.waitKey(1) & 0xFF == ord('q'):# when the key q is pressed it exits
         break
 
 cv2.destroyAllWindows()

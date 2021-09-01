@@ -20,21 +20,14 @@ while(1):
     erosion = cv2.erode(mask, kernel, iterations=1)
     dilation = cv2.dilate(mask, kernel, iterations=1)
 
-    # It is the difference between input image and Opening of the image
-    cv2.imshow('Tophat', tophat)
-
-    # It is the difference between the closing of the input image and input image.
-    cv2.imshow('Blackhat', blackhat)
-
     cv2.imshow('Original', frame)
     cv2.imshow('Mask', mask)
     cv2.imshow('Erosion', erosion)
     cv2.imshow('Dilation', dilation)
-    cv2.imshow('opening', erosopeningion)
+    cv2.imshow('opening', opening)
     cv2.imshow('closing', closing)
 
-    k = cv2.waitKey(5) & 0xFF
-    if k == 27:
+    if cv2.waitKey(1) & 0xFF == ord('q'):# when the key q is pressed it exits
         break
 
 cv2.destroyAllWindows()

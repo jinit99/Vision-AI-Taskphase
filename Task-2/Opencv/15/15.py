@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture('people-walking.mp4')
+cap = cv2.VideoCapture(0)
 fgbg = cv2.createBackgroundSubtractorMOG2()
 
 while(1):
@@ -12,10 +12,10 @@ while(1):
     cv2.imshow('fgmask', frame)
     cv2.imshow('frame', fgmask)
 
-    k = cv2.waitKey(30) & 0xff
-    if k == 27:
+    if cv2.waitKey(1) & 0xFF == ord('q'):# when the key q is pressed it exits
         break
 
 
 cap.release()
+cv2.waitKey()
 cv2.destroyAllWindows()
